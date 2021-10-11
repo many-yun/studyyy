@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>생활코딩new</title>
+    </head>
+    <body style='background-color:#555;'>
+
+      <script>
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+          if(self.value === 'night'){
+            target.style.backgroundColor = '#555';
+            target.style.color = '#fff' ;
+            self.value = 'day' ;
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+
+          } else {
+            target.style.backgroundColor = '#ddd'
+            target.style.color = 'red'
+            self.value = 'night' ;
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'blue';
+                i = i + 1;
+            }
+          }
+        }
+      </script>
+
+      <input type='button' value='night' onclick="
+        nightDayHandler(this);
+      ">
+
+      sabsbsdbsdbsdbsdb
+
+      <ul>
+        <li><a style='color:blue' href="#self">hello</a></li>
+        <li><a style='color:blue' href="#self">world</a></li>
+        <li><a style='color:blue' href="#self">bye</a></li>
+        <li><a style='color:blue' href="#self">everyone</a></li>
+
+      </ul>
+
+      <input type='button' value='night' onclick="
+        nightDayHandler(this)
+      ">
+
+
+
+    </body>
+
+</html>
