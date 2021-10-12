@@ -2,7 +2,7 @@
 height:100%;
     box-sizing: border-box;
     --bgColorMenu : #1d1d27;
-    --duration: .7s;    
+    --duration: .7s;
 
 }
 
@@ -15,9 +15,9 @@ html *::after {
 }
 
 body{
-    
+
     margin: 0;
-	width:100%; 
+	width:100%;
 	height:100%;
     align-items: center;
     justify-content: center;
@@ -37,28 +37,33 @@ ul, li {list-style:none; margin:0; padding:0; }
 .wrap > ul > li > ul > li {display:inline-block; text-align:center; vertical-align:middle;  }
 
 .wrap > ul > li > ul > li .light {width:15px; height:15px; border-radius:100%; border:1px solid rgba(255,255,255,.3); margin:0 auto 30px auto; background-color:rgba(255,255,255,.2); transition:.1s all; box-shadow:1px 1px 5px rgba(0,0,0,.5);  }
-.wrap > ul > li > ul > li:hover .light {background-color:#fff; border:0;}
+.wrap > ul > li > ul > li:hover .light {background-color:#fff; border:0; box-shadow:0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785 !important;}
+.wrap > ul > li > ul > li.on .light{background-color:#fff !important; border:0 !important; box-shadow:0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785 !important;}
 .wrap > ul > li > ul > li img {-webkit-user-drag: none; }
 
 .wrap > ul > li:nth-child(1) > ul > li {width:12.5%}
 .wrap > ul > li:nth-child(2) > ul > li {width:11.111%; }
 .wrap > ul > li:nth-child(3) > ul > li {width:11.111%; }
 
-
-.on_yellow .light{box-shadow:0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785 !important;} /*노란색*/
-.on_blue .light {box-shadow:0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff !important;} /*파란색*/
-.on_pink .light {box-shadow:0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9 !important;} /*핑크*/
-.on_green .light {box-shadow:0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53 !important;} /*초록색*/
-
-.a:hover .light, .f:hover .light, .m:hover .light, .s:hover .light, .t:hover .light, .x:hover .light {box-shadow:0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785 !important;} /*노란색*/
-.b:hover .light, .e:hover .light, .k:hover .light, .u:hover .light, .w:hover .light {box-shadow:0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff !important;} /*파란색*/
-.c:hover .light, .g:hover .light, .j:hover .light, .n:hover .light, .o:hover .light, .q:hover .light, .v:hover .light, .y:hover .light, .z:hover .light {box-shadow:0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9 !important;} /*핑크*/
-.d:hover .light, .h:hover .light, .i:hover .light, .l:hover .light, .p:hover .light, .r:hover .light {box-shadow:0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53 !important;} /*초록색*/
-
 .talk {margin:0 auto; display:block; width:400px; position:absolute; left:50%; bottom:30px; transform:translate(-50%,0); line-height:50px; color:#aaa; background-color:rgba(0,0,0,.7); border:0; padding:0 10px; font-size:1.2rem; text-align: center;
 		ime-mode:disabled; }
 .talk:focus {outline:none; }
 
+
+/*색상 알록달록
+.on_yellow .light{background-color:#fff !important; border:0 !important; box-shadow:0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785 !important;}
+.on_blue .light  {background-color:#fff !important; border:0 !important; box-shadow:0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff !important;}
+.on_pink .light  {background-color:#fff !important; border:0 !important; box-shadow:0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9 !important;}
+.on_green .light {background-color:#fff !important; border:0 !important; box-shadow:0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53 !important;}
+
+.alphabet:hover {}
+.a:hover .light, .f:hover .light, .m:hover .light, .s:hover .light, .t:hover .light, .x:hover .light {box-shadow:0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785,0 0 30px #ffe785 !important;}
+.b:hover .light, .e:hover .light, .k:hover .light, .u:hover .light, .w:hover .light {box-shadow:0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff,0 0 30px #0018ff !important;}
+.c:hover .light, .g:hover .light, .j:hover .light, .n:hover .light, .o:hover .light, .q:hover .light, .v:hover .light, .y:hover .light, .z:hover .light {box-shadow:0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9,0 0 30px #ff60f9 !important;}
+.d:hover .light, .h:hover .light, .i:hover .light, .l:hover .light, .p:hover .light, .r:hover .light {box-shadow:0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53,0 0 30px #6fff53 !important;}
+
+
+*/
 
 /*
 .wrap {width:100%; height:100%; background:url('../img/wall.jpg')no-repeat center center; }
@@ -128,8 +133,5 @@ ul, li {list-style:none; margin:0; padding:0; }
 */
 
 @media screen and (max-width: 50em) {
-   
+
 }
-
-
-
